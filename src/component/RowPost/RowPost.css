@@ -3,7 +3,7 @@
     color: #fff;
 }
 .row h2{
-    margin-left: 1.2rem;
+    text-align: center;
 }
 .posters{
     display: flex;
@@ -16,11 +16,17 @@
     display: none;
 }
 .poster{
+    cursor: pointer;
     max-height: 150px;
     margin-right: 10px;
 }
 
-/* .small-posters{
-    max-height: 100px;
+.small-posters{
+    max-height: 40px;
     margin-right: 10px;
-} */
+}
+
+.poster:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}

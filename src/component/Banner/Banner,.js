@@ -10,8 +10,8 @@ function Banner(){
     useEffect(()=>{
         axios.get(`trending/all/week?api_key=${API_KEY}&language=en-US`).then((Response)=>{
             console.log(Response.data.results[5]);
-            setMovie(Response.data.results[0])
-            setDescription(Response.data.results[0])
+            setMovie(Response.data.results[1])
+            setDescription(Response.data.results[1])
         })
     }, [])
 
@@ -20,10 +20,10 @@ function Banner(){
         className='banner'>
             <div className='content'>
                 <h1 className='title'>{movie.title}</h1>
-                <div className='banner-buttons'>    
-                    <button className='button'>Play</button>
-                    <button className='button'>My list</button>
-                </div>
+                    <div className='banner-buttons'>    
+                        <button className='button'>Play</button>
+                        <button className='button'>My list</button>
+                    </div>
                 <h1 className='description'>
                     {description.overview}
                 </h1>

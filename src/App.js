@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from './component/Banner/Banner,';
 import NavBar from './component/Navbar/NavBar';
 import RowPost from './component/RowPost/RowPost';
+import {action,orginals} from "./urls/urls"
 import "./App.css"
 
 
@@ -10,8 +11,9 @@ function App() {
     <div className="App">
       <NavBar/>
       <Banner/>
-      <RowPost title="Netflix Originals"/>
-      <RowPost title="Action" isSmall/>  
+      <RowPost url={orginals} title="Netflix Originals"/>
+      <RowPost url={action} title="Action" /> 
+      <RowPost url={action} title="Action" /> 
     </div>
   )   
 }
