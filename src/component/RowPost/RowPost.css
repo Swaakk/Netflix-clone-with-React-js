@@ -12,9 +12,7 @@
     overflow-y: hidden;
 }
 
-.posters::-webkit-scrollbar{
-    display: none;
-}
+
 .poster{
     cursor: pointer;
     max-height: 150px;
